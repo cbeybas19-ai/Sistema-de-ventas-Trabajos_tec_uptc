@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidad UPTC - Antonio Martínez Delgado</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h2><i class="fas fa-graduation-cap"></i> UPTC Colaborativo</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#trabajos">Trabajos</a></li>
+            <li><a href="#planes">Membresías</a></li>
+            <li><button id="btn-login" class="btn-primary">Iniciar Sesión</button></li>
+        </ul>
+    </nav>
+
+    <header id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Apoyo Académico Estudiantes a Distancia</h1>
+            <h2>Sede Antonio Martínez Delgado</h2>
+            <p><strong>Aviso:</strong> Esta plataforma se ha creado estrictamente con fines colaborativos para promover la ayuda mutua entre estudiantes de la técnica a distancia de la UPTC.</p>
+            <a href="#trabajos" class="btn-secondary">Explorar Trabajos</a>
+        </div>
+    </header>
+
+    <section id="trabajos" class="work-section">
+        <h2>Repositorio de Trabajos y Tutorías</h2>
+        <div class="work-controls">
+            <button class="btn-upload"><i class="fas fa-upload"></i> Subir Trabajo</button>
+            <input type="text" placeholder="Buscar trabajos o talleres..." class="search-bar">
+        </div>
+        
+        <div class="work-grid">
+            <div class="work-card">
+                <h3>Taller de Reingeniería</h3>
+                <p>Estado: <span class="status pending">Por realizar</span></p>
+                <p>Descripción: Desarrollo de taller sobre teoría Z y textos expositivos.</p>
+                <div class="card-actions">
+                    <button class="btn-download"><i class="fas fa-download"></i> Guardar/Descargar</button>
+                    <button class="btn-tutor"><i class="fas fa-chalkboard-teacher"></i> Solicitar Desarrollo/Tutoría</button>
+                </div>
+            </div>
+            <div class="work-card">
+                <h3>Taller de Matemáticas</h3>
+                <p>Estado: <span class="status done">Realizado</span></p>
+                <p>Descripción: Ejercicios de cálculo diferencial resueltos.</p>
+                <div class="card-actions">
+                    <button class="btn-download"><i class="fas fa-download"></i> Guardar/Descargar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="planes" class="pricing-section">
+        <h2>Planes de Tutorías y Desarrollo</h2>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h3>Gratis</h3>
+                <h4 class="price">$0</h4>
+                <ul>
+                    <li><i class="fas fa-check"></i> Hablar normal en el chat total</li>
+                    <li><i class="fas fa-check"></i> Comprar tutorías a precio estándar</li>
+                    <li><i class="fas fa-check"></i> Solicitar desarrollo de trabajos (con costo)</li>
+                </ul>
+                <button class="btn-plan">Seleccionar</button>
+            </div>
+
+            <div class="pricing-card popular">
+                <div class="badge">Recomendado</div>
+                <h3>Pro (1 Mes)</h3>
+                <h4 class="price">Plan Mensual</h4>
+                <ul>
+                    <li><i class="fas fa-check"></i> 20% de descuento en servicios</li>
+                    <li><i class="fas fa-check"></i> 1 Trabajo desarrollado totalmente gratis</li>
+                    <li><i class="fas fa-check"></i> Acceso a chat de soporte</li>
+                </ul>
+                <button class="btn-plan">Seleccionar Pro</button>
+            </div>
+
+            <div class="pricing-card">
+                <h3>Pro Max</h3>
+                <h4 class="price">Plan Premium</h4>
+                <ul>
+                    <li><i class="fas fa-check"></i> 35% de descuento en todos los servicios</li>
+                    <li><i class="fas fa-check"></i> 2 Trabajos gratis al mes</li>
+                    <li><i class="fas fa-check"></i> Tutorías de explicación de trabajo totalmente gratis</li>
+                </ul>
+                <button class="btn-plan">Seleccionar Pro Max</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="admin-panel" class="admin-section hidden">
+        <h2><i class="fas fa-user-shield"></i> Panel de Control (Admin)</h2>
+        <div class="admin-grid">
+            <div class="admin-card">
+                <h3>Gestión de Usuarios</h3>
+                <p>Eliminar cuentas, suspender o cambiar permisos.</p>
+                <button class="btn-danger">Eliminar Usuarios</button>
+            </div>
+            <div class="admin-card">
+                <h3>Chat Administrativo</h3>
+                <p>Hablar y charlar a través de las otras cuentas.</p>
+                <button class="btn-primary">Abrir Chat Admin</button>
+            </div>
+            <div class="admin-card">
+                <h3>Gestión de Archivos</h3>
+                <p>Aprobar y eliminar trabajos subidos.</p>
+                <button class="btn-secondary">Moderar Archivos</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h3>¿Necesitas ayuda con un trabajo?</h3>
+            <p>Contáctanos directamente:</p>
+            <a href="https://wa.me/573102940854" class="whatsapp-btn" target="_blank">
+                <i class="fab fa-whatsapp"></i> WhatsApp: 310-294-0854
+            </a>
+        </div>
+        <p class="copyright">© 2026 Red Colaborativa Estudiantes UPTC.</p>
+    </footer>
+
+    <div id="login-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Iniciar Sesión / Crear Cuenta</h2>
+            <form id="login-form">
+                <input type="email" placeholder="Correo electrónico" required>
+                <input type="password" placeholder="Contraseña" required>
+                <button type="submit" class="btn-primary">Ingresar</button>
+            </form>
+            <p class="demo-note">*Para probar los privilegios, inicia sesión con: admin@uptc.edu.co</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
